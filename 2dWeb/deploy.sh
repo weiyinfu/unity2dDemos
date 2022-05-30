@@ -1,0 +1,1 @@
+rsync -r --progress dist/* me:~/app/HomePage/dist/unityGames/
