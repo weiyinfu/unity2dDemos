@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label tabindex="-1" text="天下大势，为我所控&#10;" display-tooltip-when-elided="true" />
+    <ui:Button tabindex="-1" text="这是一个按钮" display-tooltip-when-elided="true" />
+    <ui:TextField picking-mode="Ignore" label="来将可留姓名" value="filler text" text="filler text" />
+    <ui:ProgressBar title="my-progress" />
+    <ui:DropdownField label="Dropdown" index="-1" choices="one,two,three" style="visibility: visible; margin-left: 13px; margin-right: 13px; margin-top: 13px; margin-bottom: 13px;" />
+    <ui:GroupBox />
+    <ui:GroupBox />
+</ui:UXML>

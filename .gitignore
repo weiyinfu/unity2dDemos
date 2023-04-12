@@ -43,3 +43,14 @@ Logs/
 *.app
 *.exe
 *_DoNotShip
+
+yarn-error.log
+*.sln
+.vsconfig
+.pytest_cache
+cmake-build-debug
+web-ext-artifacts
+target/
+dist/
+*_BurstDebugInformation_DoNotShip
+*.csproj

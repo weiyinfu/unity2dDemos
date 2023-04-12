@@ -103,4 +103,26 @@ class UseJson
         var b = JsonConvert.DeserializeObject<User[]>(ans);
         Debug.Log(b.Length);
     }
+
+    [Test]
+    public void testResourceJson()
+    {
+        var x = Resources.Load<TextAsset>("myjson");
+        Debug.Log(x);
+        var u = JsonConvert.DeserializeObject<User>(x.text);
+        Debug.Log($"{u.age}");
+    }
+
+
+    [Test]
+    public void testResourceJsonArray()
+    {
+        var x = Resources.Load<TextAsset>("myjson2");
+        Debug.Log(x);
+        var u = JsonConvert.DeserializeObject<User[]>(x.text);
+        foreach (var i in u)
+        {
+            Debug.Log($"{i.age}");
+        }
+    }
 }
