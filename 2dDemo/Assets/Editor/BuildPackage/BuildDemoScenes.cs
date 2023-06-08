@@ -11,7 +11,7 @@ namespace PlatformSdk.Editor
 
     public class BuildDemoScenes
     {
-        public static void Build()
+        public static void Build(BuildTarget buildTarget)
         {
             var sceneList = new[]
             {
@@ -30,10 +30,18 @@ namespace PlatformSdk.Editor
                 {
                     Debug.Log($"正在编译:{i.scenePath}=>{i.outputName}");
                     PlayerSettings.productName = i.outputName;
+                    if (buildTarget == BuildTarget.StandaloneWindows || buildTarget == BuildTarget.StandaloneWindows64)
+                    {
+                        if (!i.outputName.EndsWith(".exe"))
+                        {
+                            i.outputName += ".exe";
+                        }
+                    }
+
                     BuildPipeline.BuildPlayer(new[]
                     {
                         new EditorBuildSettingsScene(i.scenePath, true)
-                    }, $"gen/{i.outputName}", BuildTarget.StandaloneOSX, BuildOptions.Development);
+                    }, $"gen/{buildTarget}/{i.outputName}", buildTarget, BuildOptions.Development);
                 }
             }
             finally

@@ -1,9 +1,7 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 namespace 扫雷
 {
@@ -82,7 +80,7 @@ namespace 扫雷
         {
             state = GameState.unsure;
             configPanel.SetActive(false);
-            foreach (var i in GameObject.FindObjectsOfType<Card>())
+            foreach (var i in FindObjectsOfType<Card>())
             {
                 Destroy(i.gameObject);
             }

@@ -18,6 +18,6 @@ EditorBuildSettings:
     path: "Assets/done/\u8D2A\u5403\u86C7/Main.unity"
     guid: 7324cefd3faee49aaa276c06f999e794
   - enabled: 0
-    path: "Assets/done/\u626B\u96F7/\u626B\u96F7.unity"
+    path: "Assets/done/\u626B\u96F7/Main.unity"
     guid: 6ae653ce6950c4796b9fb335d8a9a53e
   m_configObjects: {}
