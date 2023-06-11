@@ -54,3 +54,5 @@ target/
 dist/
 *_BurstDebugInformation_DoNotShip
 *.csproj
+
+2dWeb/gen/
